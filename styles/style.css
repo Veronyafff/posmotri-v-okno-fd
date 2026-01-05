@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -52,14 +52,14 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  padding-top: 78px;
+  padding-top: 74px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+ margin-bottom: 15px; */
 }
 
 .result__video {
@@ -84,12 +84,12 @@ ol {
   border: none;
   display: flex;
   flex-direction: column;
+
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
 }
 
@@ -110,24 +110,33 @@ ol {
   appearance: none;
 }
 
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  cursor: pointer;
+  padding-top: 7px;
+}
+
 /* * Титульный Заголовок */ 
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
-  line-height: 100%;
 }
 
 .title {
   min-width: 399px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 92%;
   text-transform: uppercase;
+  margin-bottom: 25px;
+
 }
 
 .content__accent {
@@ -140,8 +149,9 @@ ol {
   display: flex;
   position: relative;
   flex-direction: column;
+  width: 399px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   gap: 30px;
 }
 
@@ -150,25 +160,13 @@ ol {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  /* gap: 10px; */
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-.content__list-item {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-.cards-list-item-template {
-  width: 399px;
-  height: 298px;
-  overflow-x: auto;
-  margin-top: ;
+  gap: 27px;
 }
 
 .content__card-link {
@@ -182,16 +180,18 @@ ol {
   display: flex;
   align-items: start;
   justify-content: space-between;
+
 }
 
 .content__video-card-description-container {
+  
   flex-grow: 1;
   flex-basis: 0;
   overflow: hidden;
 }
 
 .content__video-card-title {
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -201,16 +201,15 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
-  letter-spacing: 0%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   overflow: hidden;
-  line-height: 0.9;
+
 }
 
 .content__video-card-thumbnail {
@@ -260,13 +259,7 @@ ol {
   outline: none;
 }
 
-.search-form__label {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  gap: 5px;
-  cursor: pointer;
-}
+
 
 .search-form__label:has(:not(:active):focus-visible) {
   outline: 1px solid #fff;
@@ -303,16 +296,18 @@ ol {
   border: 1px solid #fff;
   background-color: transparent;
   cursor: pointer;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   color: #fff;
   padding: 6px;
+  min-height: 34px;
+
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
