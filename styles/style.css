@@ -110,6 +110,30 @@ ol {
   appearance: none;
 }
 
+/* * Титульный Заголовок */ 
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed, sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.title {
+  min-width: 399px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
 /* Правая область с карточками */
 
 .content__list-container {
@@ -196,29 +220,7 @@ ol {
   object-position: center;
 }
 
-/* Титульный Заголовок */
 
-.search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 18px;
-  line-height: 100%;
-}
-
-.title {
-  min-width: 399px;
-  font-family: Oswald, sans-serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 75px;
-  line-height: 94%;
-  text-transform: uppercase;
-}
-
-.content__accent {
-  color: #545050;
-}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
