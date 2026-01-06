@@ -194,6 +194,7 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1;
+  padding-bottom: 4px;
 }
 
 .content__video-card-description {
@@ -205,6 +206,7 @@ ol {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
+  line-height: 0.9;
 }
 
 .content__video-card-thumbnail {
